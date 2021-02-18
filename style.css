@@ -30,3 +30,6 @@ p {
   font-variant: normal;
   text-transform: none;
 }
+body {
+  background-color: #85bb65;
+}
