@@ -44,3 +44,13 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: normal;
   text-transform: none;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
