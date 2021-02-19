@@ -1,6 +1,8 @@
+{
 "repo": [
 {"name": "CyberhubMC", 
 "url": "https://github.com/TKDKid1000/CyberhubMC",
 "description": "The Cyberhub Minecraft server! All the plugins, our website, and our discord bot are here.",
 "language": "Java and python"}
 ]
+}
