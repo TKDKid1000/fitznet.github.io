@@ -3,6 +3,7 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
+<script src="projects.js"></script>
 <link rel="stylesheet" href="style.css">
 <div data-include="ogp"></div>
 </head>
@@ -10,72 +11,9 @@
 <h1 style="text-align: center;">Projects</h1>
 <title>Projects - TKDKid1000</title>
 
+
 <div data-include="navbar"></div>
-
-<input type="text" id="reposearch" onkeyup="search()" placeholder="Search for repositories">
-
-<ul id="repositories">
-  <li><a href="https://github.com/tkdkid1000/CyberhubMC">CyberhubMC</a></li>
-  <li><a href="https://github.com/tkdkid1000/rpg-bot">Rpg Bot</a></li>
-  <li><a href="https://github.com/tkdkid1000/armorswap">Armor Swapping</a></li>
-  <li><a href="https://github.com/tkdkid1000/tes">The Epic Server</a></li>
-  <li><a href="https://github.com/tkdkid1000/leveling-bot">Level Bot</a></li>
-  <li><a href="https://github.com/tkdkid1000/MCGO">MCGO</a></li>
-  <li><a href="https://github.com/tkdkid1000/internet-test">Internet Test</a></li>
-  <li><a href="https://github.com/tkdkid1000/flask-smarthome">Flask Smarthome</a></li>
-</ul>
-<style>
-#reposearch {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
-
-#repositories {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#repositories li a {
-  border: 1px solid #ddd;
-  margin-top: -1px
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black
-  display: block
-}
-
-#repositories li a:hover:not(.header) {
-  background-color: #eee;
-}
-</style>
-<script>
-function search() {
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('reposearch');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("repositories");
-  li = ul.getElementsByTagName('li');
-
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
 
 </body>
 </html>
+ 
