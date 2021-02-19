@@ -12,7 +12,6 @@ let xhr = new XMLHttpRequest();
                         var row = table.insertRow(-1);
                         var name = row.insertCell(-1);
                         name.innerHTML = repo.name;
-                        alert(response);
                         var url = row.insertCell(-1);
                         url.innerHTML = repo.url;
                         var description = row.insertCell(-1);
