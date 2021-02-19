@@ -7,7 +7,7 @@ let xhr = new XMLHttpRequest();
             function processRequest(e) {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     let response = JSON.parse(xhr.responseText);
-                    response.forEach((repo) => {
+                    response.repo.forEach((repo) => {
                         var row = table.insertRow(-1);
                         var name = row.insertCell(-1);
                         name.innerHTML = response.name;
