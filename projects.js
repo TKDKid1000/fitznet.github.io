@@ -1,4 +1,4 @@
-var table = document.getElementById("repos");
+let table = document.getElementById("repos");
 let xhr = new XMLHttpRequest();
             xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/tkdkid1000.github.io/master/data/repositories.json", true);
             xhr.send();
@@ -9,14 +9,14 @@ let xhr = new XMLHttpRequest();
                     let response = JSON.parse(xhr.responseText);
                     console.log(response);
                     response.repo.forEach((repo) => {
-                        var row = table.insertRow(0);
-                        var name = row.insertCell(0);
+                        let row = table.insertRow(0);
+                        let name = row.insertCell(0);
                         name.innerHTML = repo.name;
-                        var url = row.insertCell(-1);
+                        let url = row.insertCell(-1);
                         url.innerHTML = repo.url;
-                        var description = row.insertCell(-1);
+                        let description = row.insertCell(-1);
                         description.innerHTML = repo.description;
-                        var language = row.insertCell(-1);
+                        let language = row.insertCell(-1);
                         language.innerHTML = repo.language;
                     });
                 }
