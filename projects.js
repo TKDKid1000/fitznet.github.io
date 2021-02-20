@@ -9,7 +9,7 @@ let xhr = new XMLHttpRequest();
                     let response = JSON.parse(xhr.responseText);
                     console.log(response);
                     response.repo.forEach((repo) => {
-                        let row = table.insertRow(0);
+                        let row = table.insertRow(1);
                         let name = row.insertCell(0);
                         name.innerHTML = repo.name;
                         let url = row.insertCell(-1);
