@@ -9,8 +9,8 @@ let xhr = new XMLHttpRequest();
                     let response = JSON.parse(xhr.responseText);
                     console.log(response);
                     response.repo.forEach((repo) => {
-                        var row = table.insertRow(-1);
-                        var name = row.insertCell(-1);
+                        var row = table.insertRow(0);
+                        var name = row.insertCell(0);
                         name.innerHTML = repo.name;
                         var url = row.insertCell(-1);
                         url.innerHTML = repo.url;
