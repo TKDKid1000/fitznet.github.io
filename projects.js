@@ -13,7 +13,7 @@ let xhr = new XMLHttpRequest();
                         let name = row.insertCell(0);
                         name.innerHTML = "<p>"+repo.name+"</p>";
                         let url = row.insertCell(-1);
-                        url.innerHTML = "<p>"+repo.url+"</p>";
+                        url.innerHTML = "<a href=\""+repo.url+"\">"+repo.url+"</a>";
                         let description = row.insertCell(-1);
                         description.innerHTML = "<p>"+repo.description+"</p>";
                         let language = row.insertCell(-1);
