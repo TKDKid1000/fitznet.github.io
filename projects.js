@@ -11,13 +11,13 @@ let xhr = new XMLHttpRequest();
                     response.repo.forEach((repo) => {
                         let row = table.insertRow(1);
                         let name = row.insertCell(0);
-                        name.innerHTML = repo.name;
+                        name.innerHTML = "<p>"+repo.name+"</p>";
                         let url = row.insertCell(-1);
-                        url.innerHTML = repo.url;
+                        url.innerHTML = "<p>"+repo.url+"</p>";
                         let description = row.insertCell(-1);
-                        description.innerHTML = repo.description;
+                        description.innerHTML = "<p>"+repo.description+"</p>";
                         let language = row.insertCell(-1);
-                        language.innerHTML = repo.language;
+                        language.innerHTML = "<p>"+repo.language+"</p>";
                     });
                 }
             }

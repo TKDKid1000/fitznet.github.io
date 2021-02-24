@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid #c5c3e3;
   border-collapse: collapse;
 }
 th, td {
