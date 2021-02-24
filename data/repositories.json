@@ -4,7 +4,7 @@
 "url": "https://github.com/TKDKid1000/CyberhubMC",
 "description": "The Cyberhub Minecraft server! All the plugins, our website, and our discord bot are here.",
 "language": "Java and python"},
-{"name": MCGO",
+{"name": "MCGO",
 "url": "https://github.com/TKDKid1000/MCGO",
 "description": "CSGO and Splatoon in Minecraft! Adds tons of guns to Minecraft that can be shot, reloading, and shot again! Also has a large dev api for those looking to add extensions.",
 "language": "Java"},
