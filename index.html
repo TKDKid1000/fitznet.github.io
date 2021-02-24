@@ -14,12 +14,21 @@
 <div data-include="navbar"></div>
 
 <h1 style="text-align: center;">TKDKid1000</h1>
+<div id="readme"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    let xhr = new XMLHttpRequest();
+            xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/tkdkid1000.github.io/master/data/README.md", true);
+            xhr.send();
 
-<zero-md src="https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/README.md">
-    <template>
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/zeromd.css">
-    </template>
-</zero-md>
+            xhr.onreadystatechange = processRequest;
+            function processRequest(e) {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('readme').innerHTML =
+                        marked(xhr.responseText);
+                }
+            }
+</script>
 
 </body>
 </html>
