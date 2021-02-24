@@ -31,7 +31,7 @@ p {
   text-transform: none;
 }
 
-body {
+body::before {
   background-image: url("https://raw.githubusercontent.com/TKDKid1000/tkdkid1000.github.io/master/head.png");
   background-size: 100% 100%;
   opacity: 0.5;
