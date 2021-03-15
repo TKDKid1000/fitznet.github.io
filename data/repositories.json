@@ -1,0 +1,20 @@
+{
+"repo": [
+{"name": "TES",
+"url": "https://github.com/The-Epic-Server/tes",
+"description": "The Epic Server Github\nThis repo has multiple things. From the source code to our bot, to our projects and server goals!",
+"language": "HTML, CSS, JavaScript, and Python"},
+{"name": "MCGO",
+"url": "https://github.com/TKDKid1000/MCGO",
+"description": "CSGO and Splatoon in Minecraft! Adds tons of guns to Minecraft that can be shot, reloading, and shot again! Also has a large dev api for those looking to add extensions.",
+"language": "Java"},
+{"name": "tkdkid1000.github.io",
+"url": "https://github.com/TKDKid1000/tkdkid1000.github.io",
+"description": "My website! Come check it out. http://tkdkid1000.net",
+"language": "HTML, CSS, JavaScript"},
+{"name": "tkdkid1000.github.io",
+"url": "https://github.com/The-Epic-Server/Armis-World",
+"description": "A economy/towny style plugin for the armi_s4's twitch minecraft server.",
+"language": "Java"}
+]
+}
