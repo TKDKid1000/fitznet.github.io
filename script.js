@@ -1,7 +1,22 @@
-$(function () {
-  var includes = $('[data-include]')
-  $.each(includes, function () {
-    var file = 'data/' + $(this).data('include') + '.html'
-    $(this).load(file)
-  })
-}) 
+function togglenav() {
+	var x = document.getElementById("topnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+function copytext(text) {
+	var copyText = document.createElement("textarea");
+	copyText.value = text;
+    	document.body.appendChild(copyText);
+	copyText.style.display = "block";
+	copyText.select();
+	copyText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+	copyText.remove();
+}
+function openlink(link) {
+	window.open(link);
+}
+

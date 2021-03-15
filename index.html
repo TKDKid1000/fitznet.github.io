@@ -1,34 +1,52 @@
+<!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="https://github.com/TKDKid1000/tkdkid1000.github.io/blob/master/head.png?raw=true"/>
-<div data-include="ogp"></div>
-</head>
-<body>
-<h1 style="text-align: center;">Home</h1>
-<title>Home - TKDKid1000</title>
+    <head>
+        <title>TKDKid1000 - Home</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" type="image/png" href="/head.png">
+        <script src="/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/852720c194.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="topnav">
+            <a href="/">Home</a>
+	        <a href="/contact.html">Contact</a>
+            <a href="https://github.com/TKDKid1000">Git</a>
+            <a href="https://discord.gg/dvKTpCKBFC">Discord</a>
+            <i class="fab fa-discord fa-3x" title="Copy my discord name" onclick="copytext(`imayhaveborkedit#0406`)"></i>
+            <i class="fab fa-github fa-3x" title="Open my github" onclick="openlink(`https://github.com/TKDKid1000`)"></i>
+            <i class="fab fa-reddit fa-3x" title="Open my reddit" onclick="openlink(`https://reddit.com/u/TKDKid1000`)"></i>
+            <a href="javascript:void(0);" class="icon" onclick="togglenav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-<div data-include="navbar"></div>
 
-<h1 style="text-align: center;">TKDKid1000</h1>
-<div id="readme"></div>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-    let xhr = new XMLHttpRequest();
-            xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/README.md", true);
-            xhr.send();
-
-            xhr.onreadystatechange = processRequest;
-            function processRequest(e) {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    document.getElementById('readme').innerHTML =
-                        marked(xhr.responseText);
-                }
-            }
-</script>
-
-</body>
+        <h1 style="text-align: center;">Home</h1>
+        <div id="readme"></div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            let xhr = new XMLHttpRequest();
+                    xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/README.md", true);
+                    xhr.send();
+        
+                    xhr.onreadystatechange = processRequest;
+                    function processRequest(e) {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            document.getElementById('readme').innerHTML =
+                                marked(xhr.responseText);
+                        }
+                    }
+        </script>
+        <hr />
+        <i class="fab fa-discord fa-lg" title="Copy my discord name" onclick="copytext(`imayhaveborkedit#0406`)"></i>
+        <i class="fab fa-github fa-lg" title="Open my github" onclick="openlink(`https://github.com/TKDKid1000`)"></i>
+        <i class="fab fa-reddit fa-lg" title="Open my reddit" onclick="openlink(`https://reddit.com/u/TKDKid1000`)"></i>
+        <textarea style="display:none" id=text></textarea>
+        <span style="color:#ff0000;">&copy; </span><span style="color:#f4000a;">C</span><span style="color:#e90015;">o</span><span style="color:#df001f;">p</span><span style="color:#d4002a;">y</span><span style="color:#c90034;">r</span><span style="color:#bf003f;">i</span><span style="color:#b40049;">g</span><span style="color:#aa0054;">h</span><span style="color:#9f005e;">t </span><span style="color:#940069;">2</span><span style="color:#8a0073;">0</span><span style="color:#7f007e;">2</span><span style="color:#740088;">1</span><span style="color:#6a0093;">, </span><span style="color:#5f009d;">T</span><span style="color:#5500a8;">K</span><span style="color:#4a00b2;">D</span><span style="color:#3f00bd;">K</span><span style="color:#3500c7;">i</span><span style="color:#2a00d2;">d</span><span style="color:#1f00dc;">1</span><span style="color:#1500e7;">0</span><span style="color:#0a00f1;">0</span><span style="color:#0000fc;">0</span>
+    </body>
 </html>
+
