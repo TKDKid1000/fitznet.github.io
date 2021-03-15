@@ -15,6 +15,7 @@ function copytext(text) {
 	copyText.setSelectionRange(0, 99999)
 	document.execCommand("copy");
 	copyText.remove();
+	alert("Copied!");
 }
 function openlink(link) {
 	window.open(link);
