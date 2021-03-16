@@ -43,9 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .edit {
-  color: #161b22;
   text-align: right;
+}
+
+.edit a {
   background-color: #21262d;
+}
+.edit i {
+  color: #161b22;
 }
 
 input[type=submit], button {
