@@ -7,5 +7,25 @@
         ],
         "date": "3/18/2021",
         "readtime": 1
-    }
+    },
+    {
+        "title": "Why Java?",
+        "content": [
+            "Hello again! So if you were like me and you ever wondered \"Why Java?\" Well you came to the right place. I'm gonna explain the pros and cons of using java over other languages.",
+            "",
+            "Pros:",
+            "An instant pro is compatibility. Java works on basically everything, windows, linux, mac, etc.",
+            "PACKAGES GALORE! Java has so many built in, and you can easily get more via the use of maven/gradle.",
+            "Another definitive pro is that it is easy to learn! Java is a very basic compiled language that is great for beginners, and professionals.",
+            "My final pro is how popular it is! As of 2020, it is the 4th most used language around the world! Many big companies use it.",
+            "",
+            "Cons:",
+            "Now to dis my favorite language heheheh.",
+            "A minor con of java is that it has a lot of minor things. Capitalization, punctuation, make it a lot harder to use. But a simple ide can fix that.",
+            "The only other con I can think of is that it isn't instant. Unline python or ruby, java is a compiled language. Faster to run in production, but much slower in development.",
+            "",
+            "So, my final conclusion is that the pros outweigh the cons. Java is great fun and easy to use, even if it does have some minor complicated things."
+        ],
+        "date": "3/18/2021",
+        "readtime": 4
 ]
