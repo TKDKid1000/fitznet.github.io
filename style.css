@@ -124,6 +124,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
   height: 200px;
   overflow-y:scroll;
   overflow-x:scroll;
+  resize: both;
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, textarea:focus {
