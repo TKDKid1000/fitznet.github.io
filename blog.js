@@ -1,7 +1,4 @@
 function loadblog(divid, number) {
-    var markedjs = document.createElement('script');  
-    markedjs.setAttribute('src','https://cdn.jsdelivr.net/npm/marked/marked.min.js');
-    document.head.appendChild(markedjs);
     const div = document.getElementById(divid);
     let xhr = new XMLHttpRequest();
     xhr.open('GET', "/data/blog.json", true);
