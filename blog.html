@@ -17,6 +17,7 @@
             <a href="https://github.com/TKDKid1000">Git</a>
             <a href="https://discord.gg/dvKTpCKBFC">Discord</a>
 	    <a href="/projects.html">Projects</a>
+        <a href="/blog.html">Blog</a>
             <i class="fab fa-discord fa-3x" title="Copy my discord name" onclick="copytext(`imayhaveborkedit#0406`)"></i>
             <i class="fab fa-github fa-3x" title="Open my github" onclick="openlink(`https://github.com/TKDKid1000`)"></i>
             <i class="fab fa-reddit fa-3x" title="Open my reddit" onclick="openlink(`https://reddit.com/u/TKDKid1000`)"></i>
@@ -27,14 +28,25 @@
 
 
         <h1 style="text-align: center;">Blog</h1>
-	<div class="blogpost">
-		<h2 id="posttitle"></h2>
-		<p id="postcontent"></p>
-		<br />
-		<i class="fas fa-calendar-times"></i>
-		<p id="date"></p>
-	</div>
-	<script src="blog.js"></script>
+	    <div id="post1" class="blogpost">
+	    	<h2 id="posttitle"></h2>
+            <a id="permalink" href="">Post Link</a>
+	    	<div id="postcontent"></div>
+	    	<br />
+	    	<p id="datetime"></p>
+	    </div>
+        <div id="post2" class="blogpost">
+	    	<h2 id="posttitle"></h2>
+            <a id="permalink" href="">Post Link</a>
+	    	<div id="postcontent"></div>
+	    	<br />
+	    	<p id="datetime"></p>
+	    </div>
+	    <script src="blog.js"></script>
+        <script>
+            loadblog("post1", 0);
+            loadblog("post2", 1);
+        </script>
         <hr />
         <i class="fab fa-discord fa-lg" title="Copy my discord name" onclick="copytext(`imayhaveborkedit#0406`)"></i>
         <i class="fab fa-github fa-lg" title="Open my github" onclick="openlink(`https://github.com/TKDKid1000`)"></i>

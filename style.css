@@ -115,6 +115,17 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
   color: white;
 }
 
+.blogpost {
+  border-radius: 25px;
+  border: groove 1em black;
+  background-color: gray;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  overflow-y:scroll;
+  overflow-x:scroll;
+}
+
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, textarea:focus {
   border: 3px solid #555;
 }
