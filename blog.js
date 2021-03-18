@@ -1,4 +1,7 @@
 function loadblog(divid, number) {
+    var markedjs = document.createElement('script');  
+    markedjs.setAttribute('src','https://cdn.jsdelivr.net/npm/marked/marked.min.js');
+    document.head.appendChild(markedjs);
     const div = document.getElementById(divid);
     let xhr = new XMLHttpRequest();
     xhr.open('GET', "/data/blog.json", true);
@@ -15,8 +18,8 @@ function loadblog(divid, number) {
             } else {
                 div.querySelector("#posttitle").innerHTML = response[number]["title"];
                 for (var x=0; x<response[number]["content"].length; x++) {
-                    var element = document.createElement("p");
-                    element.appendChild(document.createTextNode(response[number]["content"][x]));
+                    var element = document.createElement("div");
+                    element.innerHTML = marked(response[number]["content"][x]);
                     div.querySelector("#postcontent").appendChild(element);
                 }
                 div.querySelector("#datetime").innerHTML = `<i class="fas fa-book"></i> ${response[number]["readtime"]} minutes | <i class="fas fa-calendar-alt"></i> ${response[number]["date"]}`;
