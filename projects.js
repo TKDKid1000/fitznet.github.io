@@ -1,13 +1,12 @@
 let table = document.getElementById("repos");
 let xhr = new XMLHttpRequest();
-            xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/tkdkid1000.github.io/master/data/repositories.json", true);
+            xhr.open('GET', "https://api.github.com/users/TKDKid1000/repos", true);
             xhr.send();
 
             xhr.onreadystatechange = processRequest;
             function processRequest(e) {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     let response = JSON.parse(xhr.responseText);
-                    console.log(response);
                     response.forEach((repo) => {
                         let row = table.insertRow(1);
                         let name = row.insertCell(0);
@@ -15,11 +14,23 @@ let xhr = new XMLHttpRequest();
                         let url = row.insertCell(-1);
                         url.innerHTML = "<a href=\""+repo.html_url+"\">"+repo.html_url+"</a>";
                         let description = row.insertCell(-1);
-                        description.innerHTML = "<p>"+repo.description+"</p>";
+                        if (repo.description !== null) {
+                            description.innerHTML = "<p>"+repo.description+"</p>";
+                        } else {
+                            description.innerHTML = "<p>The repository has no description.</p>";
+                        }
                         let language = row.insertCell(-1);
-                        language.innerHTML = "<p>"+repo.language+"</p>";
-			let license = row.insertCell(-1);
-			license.innerHTML = "<p>"+repo.license.name+"</p>";
+                        if (language !== null) {
+                            language.innerHTML = "<p>"+repo.language+"</p>";
+                        } else {
+                            language.innerHTML = "<p>This repository doesn't have a primary language.</p>";
+                        }
+                        let license = row.insertCell(-1);
+                        if (repo.license !== null) {
+                            license.innerHTML = "<p>"+repo.license.name+"</p>"
+                        } else {
+                            license.innerHTML = "<p>This repository has no license.</p>";
+                        }
                     });
                 }
             }
