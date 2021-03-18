@@ -1,14 +1,5 @@
 [
     {
-        "title": "Hello World!",
-        "content": [
-            "Hey all! I just got my blog up and running. I will probably post things here occasionally.",
-            "This might not be used much, but I just have it because I can."
-        ],
-        "date": "3/18/2021",
-        "readtime": 1
-    },
-    {
         "title": "Why Java?",
         "content": [
             "Hello again! So if you were like me and you ever wondered \"Why Java?\" Well you came to the right place. I'm gonna explain the pros and cons of using java over other languages.",
@@ -28,5 +19,14 @@
         ],
         "date": "3/18/2021",
         "readtime": 4
+    },
+    {
+        "title": "Hello World!",
+        "content": [
+            "Hey all! I just got my blog up and running. I will probably post things here occasionally.",
+            "This might not be used much, but I just have it because I can."
+        ],
+        "date": "3/18/2021",
+        "readtime": 1
     }
 ]
