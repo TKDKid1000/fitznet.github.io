@@ -42,6 +42,22 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+table {
+  overflow-x:auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  opacity: 0.2;
+  background-color: #f2f2f2;
+}
+
 .edit {
   text-align: right;
 }
