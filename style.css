@@ -37,7 +37,7 @@
 
 #darkmode:hover, #darkmodelabel:hover {
   animation-name: updown;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
