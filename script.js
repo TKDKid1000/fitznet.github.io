@@ -38,9 +38,9 @@ window.addEventListener('storage', () => {
 function toggleDarkMode() {
     if (document.getElementById("darkmode").checked) {
         window.localStorage.setItem("darkmode", "true");
-        document.documentElement.classList.add("darkmode");
+        document.body.classList.add("darkmode");
     } else {
         window.localStorage.setItem("darkmode", "false");
-        document.documentElement.classList.remove("darkmode");
+        document.body.classList.remove("darkmode");
     }
 }
