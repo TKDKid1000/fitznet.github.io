@@ -21,3 +21,26 @@ function openlink(link) {
 	window.open(link);
 }
 
+if (window.localStorage.getItem("darkmode") === null) {
+    window.localStorage.setItem("darkmode", "false");
+}
+
+if (window.localStorage.getItem("darkmode") == "true") {
+    document.getElementById("darkmode").checked = true;
+    document.documentElement.classList.add("darkmode");
+}
+
+window.addEventListener('storage', () => {
+    document.getElementById("darkmode").checked = window.localStorage.getItem("darkmode") == "true";
+    document.getElementById("darkmode").checked = window.localStorage.getItem("darkmode") == "false";
+});
+
+function toggleDarkMode() {
+    if (document.getElementById("darkmode").checked) {
+        window.localStorage.setItem("darkmode", "true");
+        document.documentElement.classList.add("darkmode");
+    } else {
+        window.localStorage.setItem("darkmode", "false");
+        document.documentElement.classList.remove("darkmode");
+    }
+}

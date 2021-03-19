@@ -1,3 +1,40 @@
+.darkmode {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+#darkmode {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABZklEQVQ4T6WUPS9EQRSGn611Ij4ShR4hUaCQ+Gj4BxKNyoYE0aFBpRMRITQaQqlTCdFJFASFSqHw8SfIu5m5OXszs3ftTDLJzcx7npk595y3RHy0Aj1ANzDoZPfAK/AC/IRCSxHeJrBR4zBtbQHSVY0Q8AYYDcCegd7c+i0wZtfywN8at5J2GBgC1oEWo804FngEzBUA/XYzcAmMuIVjoKxvD5wHDgpyFkrPCTDr4haAQ4nagc8CmD3cSpvcH+9yix0CTgJXDQIVtgLsuPgpAVeB7QTgAPDg4tcEPAemE4AK/QA6gQsBT4GZROA7oDyeCbgI7CUA1Z4qeo0lAceB6wTgMrDr4icElAl8NwhUgb+ZrmnzxVqPGYQK+850S8UsrChmCv7yVquC3jddkpnEf81BNaf+Vd58d1R1UegZMZN4BPpzuc5MIfQMq63HLCpmkP+ZMceWTqahG2n2ucAnQDfV/ApVxh+ZkDT9QJnDrQAAAABJRU5ErkJggg==');
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#darkmode + label {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABZklEQVQ4T6WUPS9EQRSGn611Ij4ShR4hUaCQ+Gj4BxKNyoYE0aFBpRMRITQaQqlTCdFJFASFSqHw8SfIu5m5OXszs3ftTDLJzcx7npk595y3RHy0Aj1ANzDoZPfAK/AC/IRCSxHeJrBR4zBtbQHSVY0Q8AYYDcCegd7c+i0wZtfywN8at5J2GBgC1oEWo804FngEzBUA/XYzcAmMuIVjoKxvD5wHDgpyFkrPCTDr4haAQ4nagc8CmD3cSpvcH+9yix0CTgJXDQIVtgLsuPgpAVeB7QTgAPDg4tcEPAemE4AK/QA6gQsBT4GZROA7oDyeCbgI7CUA1Z4qeo0lAceB6wTgMrDr4icElAl8NwhUgb+ZrmnzxVqPGYQK+850S8UsrChmCv7yVquC3jddkpnEf81BNaf+Vd58d1R1UegZMZN4BPpzuc5MIfQMq63HLCpmkP+ZMceWTqahG2n2ucAnQDfV/ApVxh+ZkDT9QJnDrQAAAABJRU5ErkJggg==');
+  height: 20px;
+  width: 20px;
+  padding: 0 0 0 0px;
+  display:inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+#darkmode:checked + label {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABZklEQVQ4T6WUPS9EQRSGn611Ij4ShR4hUaCQ+Gj4BxKNyoYE0aFBpRMRITQaQqlTCdFJFASFSqHw8SfIu5m5OXszs3ftTDLJzcx7npk595y3RHy0Aj1ANzDoZPfAK/AC/IRCSxHeJrBR4zBtbQHSVY0Q8AYYDcCegd7c+i0wZtfywN8at5J2GBgC1oEWo804FngEzBUA/XYzcAmMuIVjoKxvD5wHDgpyFkrPCTDr4haAQ4nagc8CmD3cSpvcH+9yix0CTgJXDQIVtgLsuPgpAVeB7QTgAPDg4tcEPAemE4AK/QA6gQsBT4GZROA7oDyeCbgI7CUA1Z4qeo0lAceB6wTgMrDr4icElAl8NwhUgb+ZrmnzxVqPGYQK+850S8UsrChmCv7yVquC3jddkpnEf81BNaf+Vd58d1R1UegZMZN4BPpzuc5MIfQMq63HLCpmkP+ZMceWTqahG2n2ucAnQDfV/ApVxh+ZkDT9QJnDrQAAAABJRU5ErkJggg==');
+  height: 20px;
+  width: 20px;
+  padding: 0 0 0 0px;
+  display:inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
