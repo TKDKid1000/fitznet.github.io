@@ -1,3 +1,17 @@
+$(function () {
+	var includes = $('[data-include]')
+	$.each(includes, function () {
+	  var file = $(this).data('include')
+	  var obj = $(this);
+	  $.get(file, function(data) {
+			obj.after(data);
+	 	}, 'text');
+	})
+	setTimeout(() => {
+		initDarkmode();
+	}, 10);
+  })
+
 function togglenav() {
 	var x = document.getElementById("topnav");
 	if (x.className === "topnav") {
@@ -21,32 +35,29 @@ function openlink(link) {
 	window.open(link);
 }
 
-if (window.localStorage.getItem("darkmode") === null) {
-    window.localStorage.setItem("darkmode", "false");
-}
-
-if (window.localStorage.getItem("darkmode") == "true") {
-    document.getElementById("darkmode").checked = true;
-    document.body.classList.add("darkmode");
-} else {
-	document.getElementById("darkmode").checked = false;
-	document.body.classList.remove("darkmode");
+function initDarkmode() {
+	if (window.localStorage.getItem("darkmode") === null) {
+		window.localStorage.setItem("darkmode", "false");
+	}
+	
+	if (window.localStorage.getItem("darkmode") == "true") {
+		document.body.classList.add("darkmode");
+	} else {
+		document.body.classList.remove("darkmode");
+	}
 }
 
 window.addEventListener('storage', () => {
 	if (window.localStorage.getItem("darkmode") == "true") {
-		document.getElementById("darkmode").checked = true;
 		document.body.classList.add("darkmode");
 	} else {
-		document.getElementById("darkmode").checked = false;
 		document.body.classList.remove("darkmode");
 	}
     
 });
 
 function toggleDarkMode() {
-	window
-    if (document.getElementById("darkmode").checked) {
+    if (window.localStorage.getItem("darkmode") == "false") {
         window.localStorage.setItem("darkmode", "true");
         document.body.classList.add("darkmode");
     } else {
