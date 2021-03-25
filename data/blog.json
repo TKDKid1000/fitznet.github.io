@@ -1,5 +1,17 @@
 [
     {
+        "title": "What happened to Cyberhub?",
+        "content": [
+            "Some people may have been wondering what happened to [cyberhubmc](https://github.com/TKDKid1000/CyberhubMC). In this post I will explain it simply.",
+            "",
+            "So the servers owner had some minor selfishness, and wanted to use the server vps for his own private smp.",
+            "They didn't want to share the ram in the vps, so we had to shut the original cyberhub down. They weren't showing much interest in that they never played. I assume this is why they shut it down.",
+            "I'm going to get a new server for Armis World to run on. Hopefully it will do well!"
+        ],
+        "date": "3/24/2021",
+        "readtime": 2
+    },
+    {
         "title": "Armi's World",
         "content": [
             "3rd post of the day!",

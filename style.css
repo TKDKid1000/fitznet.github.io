@@ -249,3 +249,44 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
     }
   }
 
+.social {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 0vw;
+  text-align: center;
+  color: gray;
+  transition: width 1s;
+}
+
+body.darkmode > .social {
+  -webkit-filter: invert(0%);
+  filter: invert(0%);
+}
+
+.discord {
+  background-color: purple;
+  top: 50px;
+}
+
+.reddit {
+  background-color: red;
+  top: 100px;
+}
+
+.github {
+  background-color: black;
+  top: 150px;
+}
+
+.social > .name {
+  display: none;
+}
+
+.social:hover > .name {
+  display: inline-block;
+}
+
+.social:hover {
+  width: 250px;
+}
