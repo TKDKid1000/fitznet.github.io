@@ -1,0 +1,57 @@
+[
+    {
+        "title": "What happened to Cyberhub?",
+        "content": [
+            "Some people may have been wondering what happened to [cyberhubmc](https://github.com/TKDKid1000/CyberhubMC). In this post I will explain it simply.",
+            "",
+            "So the servers owner had some minor selfishness, and wanted to use the server vps for his own private smp.",
+            "They didn't want to share the ram in the vps, so we had to shut the original cyberhub down. They weren't showing much interest in that they never played. I assume this is why they shut it down.",
+            "I'm going to get a new server for Armis World to run on. Hopefully it will do well!"
+        ],
+        "date": "3/24/2021",
+        "readtime": 2
+    },
+    {
+        "title": "Armi's World",
+        "content": [
+            "3rd post of the day!",
+            "",
+            "So why am I making this? For the Armi's World Minecraft server. It is a new economy based minecraft server.",
+            "#### Why now?",
+            "Well it isn't done yet. But to say something before is never a problem! We will be releasing in the next week. The server ip will be `armi.tkdkid1000.net`.",
+            "Make sure to save it!"
+        ],
+        "date": "3/18/2021",
+        "readtime": 1
+    },
+    {
+        "title": "Why Java?",
+        "content": [
+            "Hello again! So if you were like me and you ever wondered \"Why Java?\" Well you came to the right place. I'm gonna explain the pros and cons of using java over other languages.",
+            "",
+            "Pros:",
+            "An instant pro is compatibility. Java works on basically everything, windows, linux, mac, etc.",
+            "PACKAGES GALORE! Java has so many built in, and you can easily get more via the use of maven/gradle.",
+            "Another definitive pro is that it is easy to learn! Java is a very basic compiled language that is great for beginners, and professionals.",
+            "My final pro is how popular it is! As of 2020, it is the 4th most used language around the world! Many big companies use it.",
+            "",
+            "Cons:",
+            "Now to dis my favorite language heheheh.",
+            "A minor con of java is that it has a lot of minor things. Capitalization, punctuation, make it a lot harder to use. But a simple ide can fix that.",
+            "The only other con I can think of is that it isn't instant. Unline python or ruby, java is a compiled language. Faster to run in production, but much slower in development.",
+            "",
+            "So, my final conclusion is that the pros outweigh the cons. Java is great fun and easy to use, even if it does have some minor complicated things. Go get it from [oracle.com](https://www.oracle.com/java/technologies/javase-downloads.html)!"
+        ],
+        "date": "3/18/2021",
+        "readtime": 4
+    },
+    {
+        "title": "Hello World!",
+        "content": [
+            "Hey all! I just got my blog up and running. I will probably post things here occasionally.",
+            "This might not be used much, but I just have it because I can."
+        ],
+        "date": "3/18/2021",
+        "readtime": 1
+    }
+]
