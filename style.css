@@ -264,18 +264,23 @@ body.darkmode > .social {
   filter: invert(0%);
 }
 
-.discord {
+.social.discord {
   background-color: purple;
   top: 50px;
 }
 
-.reddit {
+.social.reddit {
   background-color: red;
   top: 100px;
 }
 
-.github {
+.social.github {
   background-color: black;
+  top: 150px;
+}
+
+.social.stackoverflow {
+  background-color: orange;
   top: 150px;
 }
 
