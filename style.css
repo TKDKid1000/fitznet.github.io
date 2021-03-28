@@ -58,10 +58,11 @@ p {
     text-transform: none;
 }
 
-body {
-  background-image: url("/head.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+html { 
+  background: url(head.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
