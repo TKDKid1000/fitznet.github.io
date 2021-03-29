@@ -106,7 +106,7 @@ tr:nth-child(even) {
 }
 
 .edit {
-  text-align: right;
+  text-align: center;
 }
 
 .edit p {
@@ -255,13 +255,16 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   }
 
 .social {
-  height: 50px;
+  height: 44px;
   width: 50px;
   position: fixed;
   right: 0vw;
   text-align: center;
   color: gray;
   transition: width 1s;
+  border-style: solid;
+  border-width: 3px;
+  background-color: black;
 }
 
 body.darkmode > .social {
@@ -270,23 +273,34 @@ body.darkmode > .social {
 }
 
 .social.discord {
-  background-color: purple;
+  border-color: purple;
   top: 50px;
 }
 
-.social.reddit {
-  background-color: red;
+.social.email {
+  border-color: aqua;
   top: 100px;
 }
 
-.social.github {
-  background-color: black;
+.social.reddit {
+  border-color: red;
   top: 150px;
 }
 
-.social.stackoverflow {
-  background-color: orange;
+.social.github {
+  border-color: black;
   top: 200px;
+}
+
+.social.stackoverflow {
+  border-color: orange;
+  top: 250px;
+}
+
+.social.codepen {
+  border-image-source: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+  border-image-slice: 1;
+  top: 300px;
 }
 
 .social > .name {
