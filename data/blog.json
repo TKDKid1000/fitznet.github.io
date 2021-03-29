@@ -1,5 +1,15 @@
 [
     {
+        "title": "Armi's World is open!",
+        "content": [
+            "Just gonna make this brief, but it might be tricky. So I'm excited to say that Armi's World is officially open!",
+            "We finished up some stuff last night, and just launched!",
+            "The java server ip is `armi.tkdkid1000.net`, and bedrock ip is `armi.tkdkid1000.net` port `19132`."
+        ],
+        "date": "3/29/2021",
+        "readtime": 1
+    },
+    {
         "title": "My latest project...",
         "content": [
             "A few friends and I have started something bigger than anything I've ever worked on. ",
