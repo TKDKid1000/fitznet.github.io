@@ -1,59 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>TKDKid1000 - Home</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="icon" type="image/png" href="/head.png">
-        <script defer src="/script.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/852720c194.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
-    </head>
-    <body>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div data-include="data/nav.html"></div>
-        <div data-include="data/darkmode.html"></div>
-        <div data-include="data/socials.html"></div>
-        <h1 style="text-align: center;">Home</h1>
-        <div class="edit">
-            <p>
-                View Raw
-                <a title="View it raw" href="https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/README.md"><i class="fa fa-file-text-o fa-2"></i></a>
-                Edit text
-                <a title="Edit this text" href="https://github.com/TKDKid1000/TKDKid1000/edit/main/README.md"><i class="fa fa-pencil-square-o fa-2"></i></a>
-            </p>
-        </div>
-        <div id="readme"></div>
-        <script>
-            let xhr = new XMLHttpRequest();
-                    xhr.open('GET', "https://raw.githubusercontent.com/TKDKid1000/TKDKid1000/main/README.md", true);
-                    xhr.send();
-        
-                    xhr.onreadystatechange = processRequest;
-                    function processRequest(e) {
-                        if (xhr.readyState == 4 && xhr.status == 200) {
-                            document.getElementById('readme').innerHTML =
-                                marked(xhr.responseText);
-                        }
-                    }
-        </script>
-        <h2>Recent Blog Post</h2>
-        <div id="post1" class="blogpost">
-	    	<h2 id="posttitle"></h2>
-            <p><a id="permalink" href="">Post Link</a></p>
-            <p id="datetime"></p>
-	    	<div id="postcontent"></div>
-	    	<br />
-	    </div>
-        <script src="blog.js"></script>
-        <script>
-            loadblog("post1", 0);
-        </script>
-        <div data-include="data/copyright.html"></div>
-    </body>
+<head>
+<meta http-equiv="refresh" content="10;url=https://tkdkid1000.net">
+</head>
+<body>
+<h1>Bye Bye!</h1>
+<p>
+tkdkid1000.github.io lived a long life, but now it's done.
+</p>
+<p>
+But don't worry, there is a better thing replacing it!
+I have worked <em>really</em> hard on it, <a href="https://tkdkid1000.net"></a>! It contains <strong>tons</strong> of features and Insould love it if you checked it out. Bye!
+</p>
+</body>
 </html>
-
